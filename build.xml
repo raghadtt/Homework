@@ -1,1 +1,15 @@
+<project default="compile">
+	<property name="srcCode" location="C:\Users\Raghad Titi\eclipse-workspace\Software\src"/>
+       <property name="result" location="./target"/>
+	      <property name="result.code" location="${result}/classes"/>
 
+	<target name="compile">
+	<mkdir dir="${result.code}"/>
+		<javac srcdir="${srcCode}"
+         destdir="${result.code}"
+         debug="true"
+			includeantruntime="false">
+			</javac>
+	</target>
+
+</project>
